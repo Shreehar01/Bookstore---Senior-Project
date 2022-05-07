@@ -55,7 +55,7 @@ const SearchMaps = ({books, latitude, longitude}) => {
                     <div className="map">
                         
                         {/* Google map */}
-                        <GoogleMapReact bootstrapURLKeys={{ key: 'AIzaSyBaZ6TH2d7pZ43WuCA1645bHw_R5oH9UaM'}}
+                        <GoogleMapReact bootstrapURLKeys={{ key: process.env.GOOGLEAPIKEY}}
                         defaultCenter={ {lat:latitude, lng:longitude,} }
                         defaultZoom={13}
                         >
